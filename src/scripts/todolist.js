@@ -112,7 +112,22 @@ class TodolistClass {
       localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
       window.location.reload();
     });
-  }
+  };
+
+   // filter
+
+  remove(cl){
+    cl.addEventListener('click', (m) => {
+      this.taskInfo = this.taskInfo.filter((cls) => cls.completed !== true );
+      this.taskInfo.forEach((remain,index) => {
+        if(remain.index !== index){
+          remain.index = index;
+        };
+      });
+      localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
+      window.location.reload();
+    });
+  };
 }
 
 const tododisplay = new TodolistClass();
