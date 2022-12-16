@@ -59,7 +59,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [To do list] <a name="about-project"></a>
 
-> In  this project a user enters a value using the input field to update his/her to do list. I have used an array of object to implement the basic structure of the program.
+> In  this project a user enters a value using the input field to update his/her to do list. I have used an array of object to implement the basic structure of the program with add and remove functionality.
 
 **[To do list]** is a...
 
@@ -67,7 +67,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
->  In  this project a user enters a value using the input field to update his/her to do list. I have used an array of object to implement the basic structure of the program.
+>  In  this project a user enters a value using the input field to update his/her to do list. I have used an array of object to implement the basic structure of the program add and remove functionality.
 
 <details>
   <summary>Client</summary>
