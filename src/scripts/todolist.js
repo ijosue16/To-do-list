@@ -18,7 +18,7 @@ class TodolistClass {
     return todoobj;
   }
 
-  displayTask(wee) {
+  static displayTask(wee) {
     const taskElement = document.createElement('li');
     taskElement.classList.add(
       'px-0',
@@ -65,14 +65,14 @@ class TodolistClass {
       </svg>`;
 
     taskElement.append(checkbox, taskDescription, dots, bin);
-    this.taskHolder.append(taskElement);
+    taskHolder.append(taskElement);
   }
 
   // show task
 
   showTask() {
     this.taskInfo.forEach((tasks) => {
-      this.displayTask(tasks);
+      TodolistClass.displayTask(tasks);
     });
   }
 
@@ -124,10 +124,10 @@ function runfunction() {
   input.addEventListener('keypress', (e) => {
     if (input.value && e.key === 'Enter') {
       const newaddedTask = tododisplay.addTask(input.value);
-      window.location.reload();
-      tododisplay.displayTask(newaddedTask);
+      TodolistClass.displayTask(newaddedTask);
       input.value = '';
       e.preventDefault();
+      window.location.reload();
     }
   });
 
