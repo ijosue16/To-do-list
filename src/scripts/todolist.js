@@ -114,8 +114,6 @@ class TodolistClass {
     });
   }
 
-
-
   remove(cl) {
     cl.addEventListener('click', () => {
       this.taskInfo = this.taskInfo.filter((cls) => cls.completed !== true);
