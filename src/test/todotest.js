@@ -1,6 +1,5 @@
 const taskHolder = document.querySelector('.task-holder');
-const input = document.querySelector('.addinput');
-const clearing = document.querySelector('.clearing');
+
 
 class TodolistClass {
   constructor() {
@@ -100,39 +99,5 @@ class TodolistClass {
    }
 }
 
-const tododisplay = new TodolistClass();
 
-// function to expoert
-
-function runfunction() {
-  tododisplay.showTask();
-  input.addEventListener('keypress', (e) => {
-    if (input.value && e.key === 'Enter') {
-      const newaddedTask = tododisplay.addTask(input.value);
-      TodolistClass.displayTask(newaddedTask);
-      input.value = '';
-      e.preventDefault();
-      window.location.reload();
-    }
-  });
-
-  const dots = document.querySelectorAll('.dots');
-
-  dots.forEach((ddt, index) => {
-    ddt.addEventListener('click', () => {
-      ddt.classList.add('d-none');
-      ddt.nextElementSibling.classList.remove('d-none');
-      tododisplay.removeSelectedTask(ddt.nextElementSibling, index);
-    });
-  });
-
-  const checkbox = document.querySelectorAll('.checkbox');
-
-  checkbox.forEach((chkbx, index) => {
-    tododisplay.updateTaskStatus(chkbx, index);
-  });
-
-  tododisplay.remove(clearing);
-}
-runfunction();
 module.exports = TodolistClass;
