@@ -114,16 +114,7 @@ class TodolistClass {
     });
   }
 
-  // removeItem(index){
-  //   this.taskInfo.splice(index, 1);
-  //     this.taskInfo.forEach((list) => {
-  //       if (list.index > index) {
-  //         list.index -= 1;
-  //       }
-  //     });
-  //     localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
-  // };
-  // filter
+
 
   remove(cl) {
     cl.addEventListener('click', () => {
