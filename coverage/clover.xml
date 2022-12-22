@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1671694593642" clover="3.2.0">
-  <project timestamp="1671694593642" name="All files">
-    <metrics statements="81" coveredstatements="15" conditionals="18" coveredconditionals="3" methods="21" coveredmethods="4" elements="120" coveredelements="22" complexity="0" loc="81" ncloc="81" packages="1" files="1" classes="1"/>
-    <file name="todotest.js" path="C:\Users\josue\Documents\GitHub\To-do-list\src\test\todotest.js">
-      <metrics statements="81" coveredstatements="15" conditionals="18" coveredconditionals="3" methods="21" coveredmethods="4"/>
+<coverage generated="1671701187534" clover="3.2.0">
+  <project timestamp="1671701187537" name="All files">
+    <metrics statements="63" coveredstatements="15" conditionals="14" coveredconditionals="3" methods="19" coveredmethods="4" elements="96" coveredelements="22" complexity="0" loc="63" ncloc="63" packages="1" files="1" classes="1"/>
+    <file name="todotest.js" path="C:\Users\LAURAPOP KONWEA\To-do-list\src\test\todotest.js">
+      <metrics statements="63" coveredstatements="15" conditionals="14" coveredconditionals="3" methods="19" coveredmethods="4"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
@@ -25,26 +25,8 @@
       <line num="48" count="0" type="stmt"/>
       <line num="50" count="0" type="stmt"/>
       <line num="51" count="0" type="stmt"/>
-      <line num="54" count="0" type="stmt"/>
-      <line num="55" count="0" type="stmt"/>
-      <line num="56" count="0" type="stmt"/>
-      <line num="60" count="0" type="stmt"/>
-      <line num="61" count="0" type="stmt"/>
-      <line num="62" count="0" type="stmt"/>
-      <line num="67" count="0" type="stmt"/>
-      <line num="68" count="0" type="stmt"/>
       <line num="74" count="0" type="stmt"/>
       <line num="75" count="0" type="stmt"/>
-      <line num="81" count="0" type="stmt"/>
-      <line num="82" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="83" count="0" type="stmt"/>
-      <line num="84" count="0" type="stmt"/>
-      <line num="85" count="0" type="stmt"/>
-      <line num="87" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="92" count="0" type="stmt"/>
-      <line num="96" count="0" type="stmt"/>
-      <line num="97" count="0" type="stmt"/>
-      <line num="98" count="0" type="stmt"/>
       <line num="104" count="0" type="stmt"/>
       <line num="105" count="0" type="stmt"/>
       <line num="106" count="0" type="stmt"/>
