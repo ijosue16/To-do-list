@@ -2,7 +2,7 @@ const taskHolder = document.querySelector('.task-holder');
 const input = document.querySelector('.addinput');
 const clearing = document.querySelector('.clearing');
 
-class TodolistClass {
+export default class TodolistClass {
   constructor() {
     this.taskInfo = JSON.parse(localStorage.getItem('Todo')) || [];
   }
@@ -114,6 +114,16 @@ class TodolistClass {
     });
   }
 
+  removeItem(index) {
+    this.taskInfo.splice(index, 1);
+    this.taskInfo.forEach((list) => {
+      if (list.index > index) {
+        list.index -= 1;
+      }
+    });
+    localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
+  }
+
   remove(cl) {
     cl.addEventListener('click', () => {
       this.taskInfo = this.taskInfo.filter((cls) => cls.completed !== true);
@@ -132,7 +142,7 @@ const tododisplay = new TodolistClass();
 
 // function to expoert
 
-function runfunction() {
+export function runfunction() {
   tododisplay.showTask();
   input.addEventListener('keypress', (e) => {
     if (input.value && e.key === 'Enter') {
@@ -162,5 +172,5 @@ function runfunction() {
 
   tododisplay.remove(clearing);
 }
-runfunction();
-module.exports = TodolistClass;
+// runfunction();
+// module.exports = TodolistClass;

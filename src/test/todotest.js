@@ -1,6 +1,5 @@
 const taskHolder = document.querySelector('.task-holder');
 
-
 class TodolistClass {
   constructor() {
     this.taskInfo = JSON.parse(localStorage.getItem('Todo')) || [];
@@ -98,6 +97,5 @@ class TodolistClass {
      });
    }
 }
-
 
 module.exports = TodolistClass;

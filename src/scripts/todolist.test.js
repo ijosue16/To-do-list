@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-const TodolistClass = require('./todotest.js');
+import TodolistClass from './todolist.js';
 
 const todolist = new TodolistClass();
 
