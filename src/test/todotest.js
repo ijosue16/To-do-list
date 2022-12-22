@@ -60,7 +60,6 @@ class TodolistClass {
     });
   }
 
- 
   removeSelectedTask(trash, index) {
     trash.addEventListener('click', () => {
       taskHolder.removeChild(trash.parentElement);
@@ -73,31 +72,32 @@ class TodolistClass {
       localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
       window.location.reload();
     });
-  };
+  }
 
-  removeItem(index){
+  removeItem(index) {
     this.taskInfo.splice(index, 1);
-      this.taskInfo.forEach((list) => {
-        if (list.index > index) {
-          list.index -= 1;
-        }
-      });
-      localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
-  };
+    this.taskInfo.forEach((list) => {
+      if (list.index > index) {
+        list.index -= 1;
+      }
+    });
+    localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
+  }
+
    filter
 
-  remove(cl){
-    cl.addEventListener('click', (m) => {
-      this.taskInfo = this.taskInfo.filter((cls) => cls.completed !== true );
-      this.taskInfo.forEach((remain,index) => {
-        if(remain.index !== index){
-          remain.index = index;
-        };
-      });
-      localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
-      window.location.reload();
-    });
-  };
+   remove(cl) {
+     cl.addEventListener('click', () => {
+       this.taskInfo = this.taskInfo.filter((cls) => cls.completed !== true);
+       this.taskInfo.forEach((remain, index) => {
+         if (remain.index !== index) {
+           remain.index = index;
+         }
+       });
+       localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
+       window.location.reload();
+     });
+   }
 }
 
 const tododisplay = new TodolistClass();
@@ -134,4 +134,5 @@ function runfunction() {
 
   tododisplay.remove(clearing);
 }
-module.exports= TodolistClass;
+runfunction();
+module.exports = TodolistClass;

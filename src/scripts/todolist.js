@@ -112,7 +112,7 @@ class TodolistClass {
       localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
       window.location.reload();
     });
-  };
+  }
 
   // removeItem(index){
   //   this.taskInfo.splice(index, 1);
@@ -123,20 +123,20 @@ class TodolistClass {
   //     });
   //     localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
   // };
-   // filter
+  // filter
 
-  remove(cl){
-    cl.addEventListener('click', (m) => {
-      this.taskInfo = this.taskInfo.filter((cls) => cls.completed !== true );
-      this.taskInfo.forEach((remain,index) => {
-        if(remain.index !== index){
+  remove(cl) {
+    cl.addEventListener('click', () => {
+      this.taskInfo = this.taskInfo.filter((cls) => cls.completed !== true);
+      this.taskInfo.forEach((remain, index) => {
+        if (remain.index !== index) {
           remain.index = index;
-        };
+        }
       });
       localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
       window.location.reload();
     });
-  };
+  }
 }
 
 const tododisplay = new TodolistClass();
@@ -173,4 +173,5 @@ function runfunction() {
 
   tododisplay.remove(clearing);
 }
+runfunction();
 module.exports = TodolistClass;
