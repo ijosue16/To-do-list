@@ -1,4 +1,4 @@
-const taskHolder = document.querySelector('.task-holder');
+// const taskHolder = document.querySelector('.task-holder');
 const input = document.querySelector('.addinput');
 const clearing = document.querySelector('.clearing');
 
@@ -18,7 +18,7 @@ export default class TodolistClass {
     return todoobj;
   }
 
-  static displayTask(wee) {
+  static displayTask(container,wee) {
     const taskElement = document.createElement('li');
     taskElement.classList.add(
       'px-0',
@@ -65,9 +65,14 @@ export default class TodolistClass {
       </svg>`;
 
     taskElement.append(checkbox, taskDescription, dots, bin);
-    taskHolder.append(taskElement);
+    // taskHolder.append(taskElement);
+    container.append(taskElement);
+
   }
 
+  updateTodo(taskname,newname){
+    taskname.innerText = newname;
+  }
   // show task
 
   showTask() {
@@ -77,28 +82,37 @@ export default class TodolistClass {
   }
 
   // updateTaskStatus
-  updateTaskStatus(chck, index) {
-    chck.addEventListener('click', (r) => {
-      if (r.currentTarget.checked) {
-        chck.nextElementSibling.classList.add('text-decoration-line-through');
-        this.taskInfo[index].completed = true;
-        localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
-      } else {
-        if (
-          chck.nextElementSibling.classList.contains(
-            'text-decoration-line-through',
-          )
-        ) {
-          chck.nextElementSibling.classList.remove(
-            'text-decoration-line-through',
-          );
-        }
-        this.taskInfo[index].completed = false;
-        localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
-        window.location.reload();
-      }
-    });
-  }
+  // updateTaskStatus(chck, index) {
+  //   chck.addEventListener('click', (r) => {
+  //     if (r.currentTarget.checked) {
+  //       chck.nextElementSibling.classList.add('text-decoration-line-through');
+  //       this.taskInfo[index].completed = true;
+  //       localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
+  //     } else {
+  //       if (
+  //         chck.nextElementSibling.classList.contains(
+  //           'text-decoration-line-through',
+  //         )
+  //       ) {
+  //         chck.nextElementSibling.classList.remove(
+  //           'text-decoration-line-through',
+  //         );
+  //       }
+  //       this.taskInfo[index].completed = false;
+  //       localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
+  //       window.location.reload();
+  //     }
+  //   });
+  // }
+
+  updateTaskStatus(todoobj){
+    if(todoobj.completed === false){
+      todoobj.completed = true;
+    }
+    else{
+      todoobj.completed = false;
+    }
+  };
 
   removeSelectedTask(trash, index) {
     trash.addEventListener('click', () => {
@@ -124,17 +138,21 @@ export default class TodolistClass {
     localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
   }
 
-  remove(cl) {
-    cl.addEventListener('click', () => {
-      this.taskInfo = this.taskInfo.filter((cls) => cls.completed !== true);
-      this.taskInfo.forEach((remain, index) => {
-        if (remain.index !== index) {
-          remain.index = index;
-        }
-      });
-      localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
-      window.location.reload();
-    });
+  // remove(cl) {
+  //   cl.addEventListener('click', () => {
+  //     this.taskInfo = this.taskInfo.filter((cls) => cls.completed !== true);
+  //     this.taskInfo.forEach((remain, index) => {
+  //       if (remain.index !== index) {
+  //         remain.index = index;
+  //       }
+  //     });
+  //     localStorage.setItem('Todo', JSON.stringify(this.taskInfo));
+  //     window.location.reload();
+  //   });
+  // }
+  remove(task){
+  const tasks = task.filter((tasks) => tasks.completed !== true)
+  return tasks
   }
 }
 

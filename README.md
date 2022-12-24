@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-kokokokok
+
 <!--
 HOW TO USE:
 This is an example of how you may give instructions on setting up your project locally.
