@@ -46,7 +46,7 @@ After you're finished please remove all the comments and instructions!
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -67,34 +67,18 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
->  In  this project a user enters a value using the input field to update his/her to do list. I have used an array of object to implement the basic structure of the program add and remove functionality.
+-**HTML**
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">HTML</a></li>
-  </ul>
-</details>
+-**CSS**
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Javascript</a></li>
-  </ul>
-</details>
+-**JavaScript**
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">CSS</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+
 
 - **[dynamic Html]**
 - **[array of objects]**
@@ -106,7 +90,6 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://ijosue16.github.io/To-do-list/dist/)
 
@@ -116,7 +99,6 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -124,20 +106,10 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
--open github.
 
--clone the repository.
-
--open vs code.
-
--open terminal and run <code> npm start</code>
-
-
-<!--
-Example command:
 
 ```sh
- gem install rails
+ install vs code on computer
 ```
  -->
 
@@ -145,42 +117,42 @@ Example command:
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
+
+
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  cd `<folder name>`
+  git clone https://github.com/ijosue16/To-do-list.git
 ```
---->
+-
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
+
 
 ```sh
-  cd my-project
-  gem install
+  Open folder using vs code
+
+  open terminal 
+
+  run `"npm install"` to install all dependencies.
+
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+
 
 ```sh
-  rails server
-```
---->
--open vs code.
 
--open terminal and run <code> npm start</code>
+run `" npm run build"` and then
+
+run `" npm start"`
+```
 
 ### Run tests
 
@@ -194,7 +166,7 @@ Example command:
 ```
 --->
 
-### Deployment
+### Deployment <a name="deployment"></a>
 
 You can deploy this project using:
 
@@ -212,11 +184,11 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+
 
 👤 **Josue**
 
-- GitHub: [@josue16](https://github.com/ijosue16)
+- GitHub: [@ijosue16](https://github.com/ijosue16)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -225,11 +197,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+
+- [ ] **[Complete page website]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -247,9 +217,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project offer me a star ⭐
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -257,9 +226,8 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -267,15 +235,12 @@ I would like to thank...
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[Can we use this project ]**
 
-  - [Answer_1]
+  - [Yes. But make sure to make changes on local computer only]
 
-- **[Question_2]**
 
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
